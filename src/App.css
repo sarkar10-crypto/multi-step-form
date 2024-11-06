@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*::selection{
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width:100vw;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container{
+  font-family: cursive;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(226, 207, 207);
+  padding: 50px  50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.back-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-bottom: 30px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+    svg {
+        transition: all 0.3s;
+      }
+    
+      &:hover svg {
+        translate: -0.25rem;
+      }
+}
+
+label{
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+input{
+  font-family: cursive;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  margin: 30px 0;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  
+}
+
+
+button{
+  font-family: cursive;
+  letter-spacing: 2px;
+  width:250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #e74138;
+  color: azure;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.Data{
+  font-family: cursive;
+  width: 50vw;
+  height: 50vh;
+  background-color: lightgray;
+  gap: 10px;
+  padding: 30px 20px 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+.contents{
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr{
+  border: 1px solid black;
 }
